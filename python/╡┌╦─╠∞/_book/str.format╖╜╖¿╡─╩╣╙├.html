@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>str.format方法的使用 | 学习目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="./公共方法.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="9"
+        data-chapter-title="str.format方法的使用"
+        data-filepath="str.format方法的使用.md"
+        data-basepath="."
+        data-revision="Sat Jul 27 2019 10:47:02 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        学习目标
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="条件判断语句.html">
+            
+                
+                    <a href="./条件判断语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        条件判断语句
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="条件判断语句/if语句的使用.html">
+            
+                
+                    <a href="./条件判断语句/if语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        if语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="条件判断语句/if...else语句的使用.html">
+            
+                
+                    <a href="./条件判断语句/if...else语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        if...else语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="条件判断语句/elif语句的使用.html">
+            
+                
+                    <a href="./条件判断语句/elif语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        elif语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="条件判断语句/if语句的嵌套.html">
+            
+                
+                    <a href="./条件判断语句/if语句的嵌套.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        if语句的嵌套
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="条件判断语句/if语句的补充.html">
+            
+                
+                    <a href="./条件判断语句/if语句的补充.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        if语句的补充
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="循环语句.html">
+            
+                
+                    <a href="./循环语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        循环语句
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="循环语句/while语句.html">
+            
+                
+                    <a href="./循环语句/while语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        while语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="循环语句/break和continue的使用.html">
+            
+                
+                    <a href="./循环语句/break和continue的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        break和continue的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="循环语句/嵌套循环.html">
+            
+                
+                    <a href="./循环语句/嵌套循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        嵌套循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="循环语句/for循环.html">
+            
+                
+                    <a href="./循环语句/for循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        for循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="字符串的使用.html">
+            
+                
+                    <a href="./字符串的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        字符串的使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="字符串的使用/字符串的使用.html">
+            
+                
+                    <a href="./字符串的使用/字符串的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        字符串的使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="列表的常见的操作.html">
+            
+                
+                    <a href="./列表的常见的操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        列表的常见的操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="列表的常见的操作/列表的使用方法.html">
+            
+                
+                    <a href="./列表的常见的操作/列表的使用方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        列表的使用方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="列表的常见的操作/列表的循环遍历.html">
+            
+                
+                    <a href="./列表的常见的操作/列表的循环遍历.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        列表的循环遍历
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="列表的常见的操作/列表的嵌套.html">
+            
+                
+                    <a href="./列表的常见的操作/列表的嵌套.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        列表的嵌套
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="元组的使用.html">
+            
+                
+                    <a href="./元组的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        元组的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="字典的常见操作.html">
+            
+                
+                    <a href="./字典的常见操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        字典的常见操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="字典的常见操作/字典的增删改查.html">
+            
+                
+                    <a href="./字典的常见操作/字典的增删改查.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        字典的增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="字典的常见操作/字典的遍历.html">
+            
+                
+                    <a href="./字典的常见操作/字典的遍历.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        字典的遍历
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="set的使用.html">
+            
+                
+                    <a href="./set的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        set的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="公共方法.html">
+            
+                
+                    <a href="./公共方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        公共方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="9" data-path="str.format方法的使用.html">
+            
+                
+                    <a href="./str.format方法的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        str.format方法的使用
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >学习目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5B57;&#x7B26;&#x4E32;&#x7684;format&#x65B9;&#x6CD5;">&#x5B57;&#x7B26;&#x4E32;&#x7684;format&#x65B9;&#x6CD5;</h1>
+<h2 id="1-&#x6982;&#x5FF5;">1. &#x6982;&#x5FF5;:</h2>
+<ul>
+<li><code>str.format()</code> &#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5927;&#x62EC;&#x53F7;<code>{}</code>&#x6765;&#x8BC6;&#x522B;&#x66FF;&#x6362;&#x5B57;&#x6BB5; <code>replacement field</code>&#xFF0C;&#x4ECE;&#x800C;&#x5B8C;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x3002;</li>
+<li><code>&#x66FF;&#x6362;&#x5B57;&#x6BB5;</code> &#x7531;&#x5B57;&#x6BB5;&#x540D; <code>field name</code> &#x548C;&#x8F6C;&#x6362;&#x5B57;&#x6BB5; <code>conversion field</code> &#x4EE5;&#x53CA;&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#x7B26; <code>format specifier</code> &#x7EC4;&#x6210;&#xFF0C;&#x5373;&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x4E3A; {&#x5B57;&#x6BB5;&#x540D;!&#x8F6C;&#x6362;&#x5B57;&#x6BB5;:&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#x7B26;}&#x3002;</li>
+<li>&#x5B57;&#x6BB5;&#x540D;&#x5206;&#x4E3A;&#x7B80;&#x5355;&#x5B57;&#x6BB5;&#x540D; <code>simple field name</code> &#x548C;&#x590D;&#x5408;&#x5B57;&#x6BB5;&#x540D; <code>compound field name</code>&#x3002;&#x800C;&#x8F6C;&#x6362;&#x5B57;&#x6BB5;&#x548C;&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#x7B26;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</li>
+</ul>
+<h2 id="2-&#x5B57;&#x6BB5;&#x540D;">2. &#x5B57;&#x6BB5;&#x540D;</h2>
+<p>form&#x7684;&#x5B8C;&#x6574;&#x683C;&#x5F0F;&#x662F;{&#x5B57;&#x6BB5;&#x540D;!&#x8F6C;&#x6362;&#x5B57;&#x7B26;:&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#x7B26;}&#x3002;&#x5176;&#x4E2D;&#x5B57;&#x6BB5;&#x540D;&#x5E08;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x7B80;&#x5355;&#x5B57;&#x6BB5;&#x540D;&#x548C;&#x590D;&#x5408;&#x5B57;&#x6BB5;&#x540D;&#x3002;</p>
+<pre><code class="lang-python">print(<span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x53EB;%s,&#x4ECA;&#x5E74;%d&#x5C81;&apos;</span> % (<span class="hljs-string">&apos;zhangsan&apos;</span>, <span class="hljs-number">18</span>))
+</code></pre>
+<h4 id="&#x4F7F;&#x7528;&#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;">&#x4F7F;&#x7528;{}&#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;</h4>
+<pre><code class="lang-python">s1 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{}&#xFF0C;&#x4ECA;&#x5E74;{}&#x5C81;&apos;</span>.format(<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-number">18</span>)
+print(s1)
+</code></pre>
+<h4 id="&#x4F7F;&#x7528;&#x6570;&#x5B57;&#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;">&#x4F7F;&#x7528;{&#x6570;&#x5B57;}&#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;</h4>
+<pre><code class="lang-python">s2 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{0}&#xFF0C;&#x4ECA;&#x5E74;{1}&#x5C81;&apos;</span>.format(<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-number">18</span>)
+print(s2)
+<span class="hljs-comment"># format &#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x591A;&#x4E8E;&#x524D;&#x9762;&#x5360;&#x4F4D;&#x7B26;&#x7684;&#x4E2A;&#x6570;</span>
+s3 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{0}&#xFF0C;&#x4ECA;&#x5E74;{1}&#x5C81;,&#x6211;&#x540C;&#x5B66;&#x4E5F;{1}&apos;</span>.format(<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-number">18</span>,<span class="hljs-string">&apos;hello&apos;</span>)
+print(s3)
+</code></pre>
+<h4 id="&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;">&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</span>
+s4 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{name}&#xFF0C;&#x4ECA;&#x5E74;{age&#x5C81;&apos;</span>.format(name=<span class="hljs-string">&apos;zhangsan&apos;</span>, age=<span class="hljs-number">18</span>, gender=<span class="hljs-string">&apos;male&apos;</span>)
+print(s4)
+</code></pre>
+<h4 id="&#x4F7F;&#x7528;&#x6570;&#x5B57;&#xFF08;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF09;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;">&#x4F7F;&#x7528;&#x6570;&#x5B57;&#xFF08;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF09;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</span>
+s4 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{name}&#xFF0C;&#x4ECA;&#x5E74;{age&#x5C81;&apos;</span>.format(name=<span class="hljs-string">&apos;zhangsan&apos;</span>, age=<span class="hljs-number">18</span>, gender=<span class="hljs-string">&apos;male&apos;</span>)
+print(s4)
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x6570;&#x5B57;&#x548C;&#x5173;&#x952E;&#x5B57;&#x6DF7;&#x5408;&#x4F7F;&#x7528;</span>
+<span class="hljs-comment"># &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x4E00;&#x5B9A;&#x8981;&#x5199;&#x5230;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x540E;&#x9762;</span>
+s5 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{0}&#xFF0C;&#x4ECA;&#x5E74;{age}&#x5C81;&apos;</span>.format(<span class="hljs-string">&apos;zhangsan&apos;</span>,age=<span class="hljs-number">18</span>)
+print(s5)
+</code></pre>
+<h4 id="&#x4F7F;&#x7528;&#x7A7A;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x6DF7;&#x5408;&#x4F7F;&#x7528;">&#x4F7F;&#x7528;&#x7A7A;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x6DF7;&#x5408;&#x4F7F;&#x7528;</h4>
+<p>&#x6570;&#x5B57;&#x548C;&#x7A7A;&#x4E0D;&#x80FD;&#x6DF7;&#x5408;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-python">s6 = <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{}&#xFF0C;&#x4ECA;&#x5E74;{age}&#x5C81;&apos;</span>.format(<span class="hljs-string">&apos;zhangsan&apos;</span>, age=<span class="hljs-number">18</span>)
+print(s6)
+<span class="hljs-comment"># s7 = &apos;&#x4F60;&#x597D;&#xFF0C;&#x6211;&#x7684;&#x540D;&#x5B57;&#x662F;{0}&#xFF0C;&#x4ECA;&#x5E74;{}&#x5C81;&apos;.format(&apos;zhangsan&apos;, 18)</span>
+<span class="hljs-comment"># print(s7)</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./公共方法.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 公共方法"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

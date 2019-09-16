@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>字典的遍历 | 学习目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../set的使用.html" />
+    
+    
+    <link rel="prev" href="../字典的常见操作/字典的增删改查.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="6.2"
+        data-chapter-title="字典的遍历"
+        data-filepath="字典的常见操作/字典的遍历.md"
+        data-basepath=".."
+        data-revision="Sat Jul 27 2019 10:47:02 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        学习目标
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="条件判断语句.html">
+            
+                
+                    <a href="../条件判断语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        条件判断语句
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="条件判断语句/if语句的使用.html">
+            
+                
+                    <a href="../条件判断语句/if语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        if语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="条件判断语句/if...else语句的使用.html">
+            
+                
+                    <a href="../条件判断语句/if...else语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        if...else语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="条件判断语句/elif语句的使用.html">
+            
+                
+                    <a href="../条件判断语句/elif语句的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        elif语句的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="条件判断语句/if语句的嵌套.html">
+            
+                
+                    <a href="../条件判断语句/if语句的嵌套.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        if语句的嵌套
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="条件判断语句/if语句的补充.html">
+            
+                
+                    <a href="../条件判断语句/if语句的补充.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        if语句的补充
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="循环语句.html">
+            
+                
+                    <a href="../循环语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        循环语句
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="循环语句/while语句.html">
+            
+                
+                    <a href="../循环语句/while语句.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        while语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="循环语句/break和continue的使用.html">
+            
+                
+                    <a href="../循环语句/break和continue的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        break和continue的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="循环语句/嵌套循环.html">
+            
+                
+                    <a href="../循环语句/嵌套循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        嵌套循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="循环语句/for循环.html">
+            
+                
+                    <a href="../循环语句/for循环.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        for循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="字符串的使用.html">
+            
+                
+                    <a href="../字符串的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        字符串的使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="字符串的使用/字符串的使用.html">
+            
+                
+                    <a href="../字符串的使用/字符串的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        字符串的使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="列表的常见的操作.html">
+            
+                
+                    <a href="../列表的常见的操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        列表的常见的操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="列表的常见的操作/列表的使用方法.html">
+            
+                
+                    <a href="../列表的常见的操作/列表的使用方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        列表的使用方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="列表的常见的操作/列表的循环遍历.html">
+            
+                
+                    <a href="../列表的常见的操作/列表的循环遍历.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        列表的循环遍历
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="列表的常见的操作/列表的嵌套.html">
+            
+                
+                    <a href="../列表的常见的操作/列表的嵌套.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        列表的嵌套
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="元组的使用.html">
+            
+                
+                    <a href="../元组的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        元组的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="字典的常见操作.html">
+            
+                
+                    <a href="../字典的常见操作.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        字典的常见操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="字典的常见操作/字典的增删改查.html">
+            
+                
+                    <a href="../字典的常见操作/字典的增删改查.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        字典的增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="字典的常见操作/字典的遍历.html">
+            
+                
+                    <a href="../字典的常见操作/字典的遍历.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        字典的遍历
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="set的使用.html">
+            
+                
+                    <a href="../set的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        set的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="公共方法.html">
+            
+                
+                    <a href="../公共方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        公共方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="str.format方法的使用.html">
+            
+                
+                    <a href="../str.format方法的使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        str.format方法的使用
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >学习目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x5B57;&#x5178;&#x7684;&#x904D;&#x5386;">&#x5B57;&#x5178;&#x7684;&#x904D;&#x5386;</h2>
+<pre><code class="lang-python">person = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;zhangsan&apos;</span>, <span class="hljs-string">&apos;age&apos;</span>: <span class="hljs-number">18</span>, <span class="hljs-string">&apos;gender&apos;</span>: <span class="hljs-string">&apos;male&apos;</span>}
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;for...in..&#x5FAA;&#x73AF;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x62FF;&#x5230;&#x6240;&#x6709;&#x7684;key</span>
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> person:
+    print(<span class="hljs-string">&apos;%s&#x7684;&#x503C;&#x662F;%s&apos;</span> % (x, person[x]))
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;enumerate&#x5F97;&#x5230;&#x7684;&#x662F;x&#x7684;&#x4E0B;&#x6807;&#xFF0C;y&#x662F;key</span>
+<span class="hljs-keyword">for</span> x, y <span class="hljs-keyword">in</span> enumerate(person):
+    print(<span class="hljs-string">&apos;%s&#x7684;&#x503C;&#x662F;%s&apos;</span> % (x, y))
+<span class="hljs-comment"># &#x62FF;&#x5230;&#x6240;&#x6709;&#x7684;&#x952E;&#x503C;&#x5BF9;</span>
+<span class="hljs-keyword">for</span> x, y <span class="hljs-keyword">in</span> person.items():
+    print(x, y)
+
+<span class="hljs-comment"># &#x62FF;&#x5230;&#x6240;&#x6709;&#x7684;value</span>
+<span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> person.values():
+    print(y)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../字典的常见操作/字典的增删改查.html" class="navigation navigation-prev " aria-label="Previous page: 字典的增删改查"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../set的使用.html" class="navigation navigation-next " aria-label="Next page: set的使用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>列表推导式 | 学习目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../高阶函数.html" />
+    
+    
+    <link rel="prev" href="../函数高级/匿名函数.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.9"
+        data-chapter-title="列表推导式"
+        data-filepath="函数高级/列表推导式.md"
+        data-basepath=".."
+        data-revision="Sat Jul 27 2019 14:22:34 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        学习笔记
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="函数介绍.html">
+            
+                
+                    <a href="../函数介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        函数基础
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="函数基础/函数的定义.html">
+            
+                
+                    <a href="../函数基础/函数的定义.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        函数的定义
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="函数基础/函数的参数.html">
+            
+                
+                    <a href="../函数基础/函数的参数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        函数的参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="函数基础/函数的返回值.html">
+            
+                
+                    <a href="../函数基础/函数的返回值.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        函数的返回值
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="函数基础/函数的练习.html">
+            
+                
+                    <a href="../函数基础/函数的练习.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        函数的练习
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="函数基础/函数的嵌套调用.html">
+            
+                
+                    <a href="../函数基础/函数的嵌套调用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        函数的嵌套调用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="函数基础/函数的文档说明.html">
+            
+                
+                    <a href="../函数基础/函数的文档说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        函数的文档说明
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="函数高级.html">
+            
+                
+                    <a href="../函数高级.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        函数高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="函数高级/局部变量和全局变量.html">
+            
+                
+                    <a href="../函数高级/局部变量和全局变量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        局部变量和全局变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="函数高级/函数中多个return.html">
+            
+                
+                    <a href="../函数高级/函数中多个return.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        函数中多个return
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="函数高级/拆包.html">
+            
+                
+                    <a href="../函数高级/拆包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        拆包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="函数高级/函数参数.html">
+            
+                
+                    <a href="../函数高级/函数参数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        函数参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="函数高级/数据类型于参数值传递.html">
+            
+                
+                    <a href="../函数高级/数据类型于参数值传递.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        数据类型于参数值传递
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="函数高级/函数注意事项.html">
+            
+                
+                    <a href="../函数高级/函数注意事项.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        函数注意事项
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="函数高级/递归函数.html">
+            
+                
+                    <a href="../函数高级/递归函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        递归函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="函数高级/匿名函数.html">
+            
+                
+                    <a href="../函数高级/匿名函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        匿名函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="函数高级/列表推导式.html">
+            
+                
+                    <a href="../函数高级/列表推导式.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        列表推导式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="高阶函数.html">
+            
+                
+                    <a href="../高阶函数.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        高阶函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="闭包.html">
+            
+                
+                    <a href="../闭包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="装饰器.html">
+            
+                
+                    <a href="../装饰器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="名片管理系统.html">
+            
+                
+                    <a href="../名片管理系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        名片管理系统
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >学习目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;">&#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;</h2>
+<p>&#x6240;&#x8C13;&#x7684;&#x5217;&#x8868;&#x63A8;&#x5BFC;&#x5F0F;&#xFF0C;&#x5C31;&#x662F;&#x6307;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x5FAA;&#x73AF;&#x521B;&#x5EFA;<strong>&#x5217;&#x8868;</strong></p>
+<pre><code class="lang-python">a = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">11</span>) <span class="hljs-keyword">if</span> x % <span class="hljs-number">2</span>]
+print(a)  <span class="hljs-comment"># [1, 3, 5, 7, 9]</span>
+</code></pre>
+<pre><code class="lang-python">b = [(x,y) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>)]
+print(b)  <span class="hljs-comment"># [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2)]</span>
+</code></pre>
+<pre><code class="lang-python">c = (z <span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>))
+print(c)  <span class="hljs-comment"># &#x5F97;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;</span>
+print(next(c))
+print(next(c))
+print(next(c))
+</code></pre>
+<p>&#x5199;&#x51FA;&#x4E00;&#x6BB5; Python &#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x5206;&#x7EC4;&#x4E00;&#x4E2A; list &#x91CC;&#x9762;&#x7684;&#x5143;&#x7D20;,&#x6BD4;&#x5982; [1,2,3,...100]&#x53D8;&#x6210; [[1,2,3],[4,5,6]....]</p>
+<pre><code class="lang-python">nums = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">101</span>)]
+print(nums)
+m = [nums[i:i+<span class="hljs-number">3</span>] <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">3</span>)]  <span class="hljs-comment"># &#x8FD0;&#x7528;&#x5207;&#x7247;  &#x53D6;&#x503C;&#x65F6;&#x6B65;&#x957F;&#x4E3A;&#x4E09;</span>
+print(m)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../函数高级/匿名函数.html" class="navigation navigation-prev " aria-label="Previous page: 匿名函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../高阶函数.html" class="navigation navigation-next " aria-label="Next page: 高阶函数"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
