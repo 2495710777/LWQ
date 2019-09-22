@@ -1,0 +1,47 @@
+user = User.query.get(id=3)
+
+print(user.name)
+
+返回的模型类
+
+默认情况下在调用get方法的时候就发送了sql语句
+
+如果使用了dynamic 那么代表的就是懒加载或者延迟加载
+
+在使用对象的属性或者方法时才发送sql语句
+
+users = User.query.all()
+
+for user in users:
+
+print(user.name)
+
+返回的base.query对象
+
+默认情况下在调用all方法的时候就发送了sql语句
+
+如果使用了dynamic ,在遍历的时候发送sql语句
+
+
+
+
+
+```
+不加relationship
+给主表数据，查询从表数据
+parent = Parent.query.filter(Parent.id ==1)[0]
+childs = Child.query.filter(Child.parent_id == parent.id)
+
+加relationship,中不加backref,只能通过主表找从表
+/getChild2/
+parent = Parent.query.filter(Parent.id ==1)[0]
+childs = parent.children
+
+加relationship,加backref='parent'，可以通过从表找主表
+child = Child.query.filter(Child.id == 1)[0]
+print(child.parent.name)
+```
+
+一对一：
+
+uselist=False 是在模型执行的时候 会验证从表中是否有重复的数据，所以才会是一对一
